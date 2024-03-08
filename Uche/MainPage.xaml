@@ -1,0 +1,36 @@
+﻿<Page x:Class="Uche.MainPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Uche"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="MainPage">
+
+    
+
+        <Canvas Margin="0,0,-148,-270" Background="Bisque">
+            <DataGrid AutoGenerateColumns="False" Name="info" Grid.RowSpan="2" HorizontalAlignment="Left" Height="470" Canvas.Top="259" VerticalAlignment="Top" Canvas.Left="19" Width="874">
+                <DataGrid.Columns   >
+                    <DataGridTextColumn Binding="{Binding ID}" Header="ID" Width="50" x:Name="TID"/>
+                    <DataGridTextColumn Binding="{Binding Text}" Header="Мебель" Width="125"/>
+                    <DataGridTextColumn Binding="{Binding SuppID}" Header="Желаемая Цена" Width="125"/>
+                    <DataGridTextColumn Binding="{Binding UserID}" Header="Кол-во" Width="125"/>
+
+                </DataGrid.Columns>
+            </DataGrid>
+            <Button Content="sort" Background="#FFFF9C1A" FontSize="15" HorizontalAlignment="Left" Margin="100,227,0,0" VerticalAlignment="Top" Height="27" Width="116" Click="Button_Click_Add" BorderBrush="#FF37474F" Foreground="#FF37474F"/>
+            <TextBox HorizontalAlignment="Left" Margin="183,73,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Name="TNAME"/>
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Торговый центр" FontSize="20" VerticalAlignment="Top" Width="186" Canvas.Left="380" Canvas.Top="10" Cursor="AppStarting" Foreground="#FF37474F" />
+            <TextBlock HorizontalAlignment="Left" Margin="41,73,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="117" Foreground="#FF78909C"><Run Text="Введите "/><Run Language="ru-ru" Text="название тц"/></TextBlock>
+            <TextBlock HorizontalAlignment="Left" Margin="41,113,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="117" Foreground="#FF78909C"><Run Text="Введите "/><Run Language="ru-ru" Text="статус"/></TextBlock>
+            <TextBox HorizontalAlignment="Left" Margin="183,113,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Name="TAGE"/>
+            <TextBlock HorizontalAlignment="Left" Margin="41,153,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="117" Foreground="#FF78909C"><Run Text="Введите "/><Run Language="ru-ru" Text="кол-во павильонов"/></TextBlock>
+            <TextBlock HorizontalAlignment="Left" Margin="41,193,0,0" TextWrapping="Wrap" Text="Введите город" VerticalAlignment="Top" Width="117" Foreground="#FF78909C"/>
+            <TextBox HorizontalAlignment="Left" Margin="183,153,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Name="TPHONE"/>
+            <TextBox HorizontalAlignment="Left" Margin="183,193,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Name="TCITY"/>
+            <Button Content="back" Background="#FFFF9C1A" FontSize="15" Height="27" Width="116" Click="Button_Click_Add1" BorderBrush="#FF37474F" Foreground="#FF37474F" Canvas.Left="489" Canvas.Top="221"/>
+        </Canvas>
+    
+</Page>
